@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import PostsList from "./components/PostsList";
 import PostDetail from "./components/PostDetail";
+import SignupForm from "./components/SignupForm";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<PostsList />} />
           <Route path="/post/:id" element={<PostDetail />} />
         </Routes>
+        <SignupForm />
       </main>
     </Router>
   );
